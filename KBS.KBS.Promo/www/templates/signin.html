@@ -1,35 +1,40 @@
-﻿<ion-view view-title="Login">   
-    <body ng-controller="SignInCtrl">
-        <ion-content>          
-            <form name="SignForm" novalidate>
-                <div class="list">
-                    <label class="item item-input">
-                        <span class="input-label">Username</span>
-                        <input type="text" name="username" ng-model="username" ng-minlength="5" required>
-                    </label>
-                    <label class="item item-input">
-                        <span class="input-label">Password</span>
-                        <input type="password" name="password" ng-model="password" ng-minlength="6" required>
-                    </label>
-                </div>
-                <div class="padding">
-                    <p ng-show="SignForm.username.$error.required">* Username is required</p>
-                    <p ng-show="SignForm.username.$invalid && !SignForm.username.$pristine">* Username must be an email address</p>
-                    <p ng-show="SignForm.username.$error.minlength">* Username must be longer than 5 characters</p>
-                    <p ng-show="SignForm.password.$error.required">* Password is required</p>
-                    <p ng-show="SignForm.password.$error.minlength">* Password must be longer than 6 characters</p>
-                </div>
-                <div class="padding">
-                    <button type="button" name="signin" class="button button-block button-positive" ng-click="submit(username)" ng-disabled="SignForm.$invalid">
-                        Sign-In
-                    </button>
-                    <a href="#/app/signup" class="button button-block button-positive">Sign Up </a>
-                    <p class="text-center">
-
-                        <a href="#/forgot-password"> Forgot password</a>
-                    </p>
-                </div>
-            </form>
-        </ion-content>
-        </body>
+﻿<ion-view  view-title="Information">
+    <ion-header-bar align-title="left" class="bar-positive">
+        <h1 class="title">Sign In</h1>
+    </ion-header-bar>
+    <ion-content ng-controller="SignInCtrl">
+        <form name="SignForm" novalidate>
+            <div>
+                <label class="text-center" style="align-content:center">
+                    <span style="font-size:large">Sign In</span>
+                </label>
+            </div>
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" name="username" ng-model="username" ng-minlength="5" required>
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" name="password" ng-model="password" ng-minlength="6" required>
+                </label>
+            </div>
+            <div class="padding">
+                <p ng-show="SignForm.username.$error.required">* Username is required</p>
+                <p ng-show="SignForm.username.$invalid && !SignForm.username.$pristine">* Username must be an email address</p>
+                <p ng-show="SignForm.username.$error.minlength">* Username must be longer than 5 characters</p>
+                <p ng-show="SignForm.password.$error.required">* Password is required</p>
+                <p ng-show="SignForm.password.$error.minlength">* Password must be longer than 6 characters</p>
+            </div>
+            <div class="padding">
+                <button type="button" name="signin" class="button button-block button-positive" ng-click="submit(username)" ng-disabled="SignForm.$invalid">
+                    Sign-In
+                </button>
+                <a href="#/app/signup" class="button button-block button-positive">Sign Up </a>
+                <p class="text-center">
+                    <a href="#/forgot-password"> Forgot password</a>
+                </p>
+            </div>
+        </form>
+    </ion-content>
 </ion-view>

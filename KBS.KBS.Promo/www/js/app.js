@@ -46,7 +46,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
             'menuContent': {
                 templateUrl: 'templates/signin.html',
-              //  controller: 'SignInCtrl'c:\users\hayi\documents\visual studio 2015\projects\kbs.ksb.promo2\kbs.kbs.promo\www\js\app.js
+                controller: 'SignInCtrl'
             }
         }
     })
@@ -119,6 +119,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
            }
        }
    });
-  // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+    // if none of the above states are matched, use this as the fallback
+    
+    //$ionicSideMenuDelegate.canDragContent(false);
+    //$ionicNavBarDelegate.showBar(false);
+    $urlRouterProvider.otherwise('/app/signin');    
 });

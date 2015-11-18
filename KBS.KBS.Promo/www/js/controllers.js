@@ -50,38 +50,24 @@ angular.module('starter.controllers', [])
 })
 .controller('SearchCtrl', function ($scope, $stateParams) {
 })
-.controller('SignInCtrl', function ($scope, $ionicModal) {
-    $scope.signup = friends;
-    $scope.submit = function (username) {
-        if (username == "Sign Up") {
-            alert("Sign Up " + username);
-            $scope.showModal('app/templates/signup.html');
-        }
-        else {
-            alert("Log In " + username);
-        }
-        $scope.showModal = function (templateUrl) {
+.controller('SignInCtrl', function ($scope, $log, $window) {
+           
+    
 
-
-            $ionicModal.fromTemplateUrl(templateUrl,
-                {
-                    scope: $scope,
-                    //           animation: 'slide-in-up'
-                }
-            ).then(function (modal) {
-                $scope.modal = modal;
-                $scope.modal.show();
-            }
-            );
-
-            // Close the modal
-                $scope.closeModal = function () {
-                $scope.modal.hide();
-                $scope.modal.remove();
-            };
-        }
-
+    $scope.submit = function (username) {        
+        alert("Log In " + username);
+        var url = "#/app/informasi";
+        $log.log(url);
+        $window.location.href = url;
+        //$location.fromTemplateUrl('/app/informasi', '_self');
+        //$location.reload();
+        
+        //$urlRouterProvider.otherwise('/informasi');
+       
+            
     }
+    
+
 })
 
 
