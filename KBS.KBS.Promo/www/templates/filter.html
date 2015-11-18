@@ -1,0 +1,48 @@
+﻿<div class="modal image-modal transparent">
+    <ion-header-bar>
+        <h1 class="title">Filter</h1>
+    </ion-header-bar>
+    <ion-content>
+        <div>
+            <label class="item item-input item-select">
+                <span class="input-label">
+                    Location
+                </span>
+                <select name="location">
+                    <option selected>All</option>
+                    <option>Bandung</option>
+                    <option>Bali</option>
+                    <option>Jakarta</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label class="item item-input item-select">
+                <span class="input-label">Store</span>
+                <select name="Store">
+                    <option selected>All</option>
+                    <option>Paris Van Java</option>
+                    <option>Pejaten</option>
+                    <option>Ambasador</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label class="item item-input">
+                <span class="input-label">Start Date</span>
+                <input type="date" name="StartDate" required>
+            </label>
+        </div>
+        <div>
+            <label class="item item-input">
+                <span class="input-label">End Date</span>
+                <input type="date" name="EndDate" required>
+            </label>
+        </div>
+        <div class="padding">
+            <button class="button button-block button-positive" ng-click="submit(username)">
+                Proses
+            </button>
+        </div>
+    </ion-content>
+</div>

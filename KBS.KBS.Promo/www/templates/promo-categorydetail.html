@@ -1,0 +1,20 @@
+﻿<div class="modal image-modal transparent">
+    <ion-header-bar>
+        <h1 class="title">Detail</h1>
+    </ion-header-bar>
+    <ion-content>
+        <!--<ion-list>
+            <ion-item ng-repeat="i in promoCategoryDetail" ng-click="promoCategoryDetailShowData($index)">
+                <img ng-src="{{i.image}}" class="image-list-thumb" />
+            </ion-item>
+        </ion-list>-->
+        <div class="row" ng-repeat="i in promoCategoryDetail " ng-click="promoCategoryDetailShowData($index)">
+            <div class=" col col-100">
+                <img ng-src="{{promoCategoryDetail[$index].image}}" width="100%" />
+            </div>
+            <div class="col col-100">
+                <img ng-src="{{promoCategoryDetail[$index +1].image}}" width="100%" />
+            </div>
+        </div>
+    </ion-content>
+</div>
