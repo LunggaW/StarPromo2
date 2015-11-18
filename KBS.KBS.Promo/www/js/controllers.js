@@ -173,11 +173,11 @@ angular.module('starter.controllers', [])
 
 
 var promo = [
-  { name: 'John', age: 25, gender: 'boy', image: "img/908.png", promocode: 'Matahari1-promocode', barcode: 'Matahari1-barcode' },
-  { name: 'Jessie', age: 30, gender: 'girl', image: "img/908_2.png" },
-  { name: 'Johanna', age: 28, gender: 'girl', image: "img/909.jpg" },
-  { name: 'Joy', age: 15, gender: 'girl', image: "img/909_2.png" },
-  { name: 'Mary', age: 28, gender: 'girl', image: "img/910.png" }
+  { name: 'John', age: 25, gender: 'boy', image: "img/914-resize.png", promocode: 'Matahari1-promocode', barcode: 'Matahari1-barcode' },
+  { name: 'Jessie', age: 30, gender: 'girl', image: "img/911-resize.png" ,promocode: 'Matahari2-promocode', barcode: 'Matahari2-barcode'},
+  { name: 'Johanna', age: 28, gender: 'girl', image: "img/BEF451.png", promocode: 'Matahari3-promocode', barcode: 'Matahari3-barcode' },
+  { name: 'Joy', age: 15, gender: 'girl', image: "img/BEF50-resize.png", promocode: 'Matahari4-promocode', barcode: 'Matahari4-barcode' },
+  { name: 'Mary', age: 28, gender: 'girl', image: "img/BEF451.png", promocode: 'Matahari5-promocode', barcode: 'Matahari5-barcode' }
 ];
 
 ;
