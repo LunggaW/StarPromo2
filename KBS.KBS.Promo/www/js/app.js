@@ -56,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: '/informasi',
         views: {
             'menuContent': {
-                templateUrl: 'templates/Informasi.html',
+                templateUrl: 'templates/informasi.html',
                 controller: 'InformasiCtrl'
             }
         }
@@ -119,7 +119,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
            }
        }
    });
-    // if none of the above states are matched, use this as the fallback
+  // if none of the above states are matched, use this as the fallback
     
     //$ionicSideMenuDelegate.canDragContent(false);
     //$ionicNavBarDelegate.showBar(false);

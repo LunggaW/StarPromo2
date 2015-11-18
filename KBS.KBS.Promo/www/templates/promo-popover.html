@@ -3,11 +3,16 @@
         <h1 class="title">Detail</h1>
     </ion-header-bar>
     <ion-content>
-        <div class="list">
-            <label class="item item-input">
-                <span class="input-label">{{promo.promocode}}</span>
-            </label>
-            <<img ng-src="{{promo.imageUrl}}" class="image-list-thumb" on-tap="onTapModal()" />>
-        </div>
+        <ion-list>
+            <div class="list">
+                <ion-item>
+                    <label class="item item-input">
+                        <span class="input-label">{{promo.promocode}}</span>
+                    </label>
+                    <img ng-src="{{promo.imageUrl}}" class="image-list-thumb" on-tap="onTapModal()" />
+                </ion-item>
+            </div>
+
+        </ion-list>
     </ion-content>
 </div>

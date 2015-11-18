@@ -14,11 +14,11 @@
                 </ion-slide>
             </ion-slide-box>
             <ion-slide-box on-slide-changed="slideHasChanged()" show-pager="true" does-continue="true">
-                <ion-slide ng-repeat="i in promoCategory" ng-click="showDataCategory($index)" >
-                    <img ng-src="{{i.image}}" class="image-list-thumb"/>
+                <ion-slide ng-repeat="i in promoCategory" ng-click="showDataCategory($index)">
+                    <img ng-src="{{i.image}}" class="image-list-thumb" />
                 </ion-slide>
             </ion-slide-box>
         </ion-content>
+        
     </div>
 </body>
-</html>

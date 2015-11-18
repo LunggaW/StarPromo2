@@ -1,0 +1,28 @@
+﻿.slider {
+    height: 50vh;
+}
+
+.slider-slide {
+    /*width: 100vh; */
+    /*padding-left: 20vh;*/
+    /*padding-right: 20vh;*/
+    padding-top: 10vh;
+    background-color: white;
+}
+
+
+.image-list-thumb {
+    padding: 2px 2px 2px 2px;
+    height: 34vh;
+     margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+.image-footer {
+    height:35px;
+
+}
+
+
