@@ -31,6 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           templateUrl: 'templates/menu.html',
           controller: 'AppCtrl'
       })
+
     .state('app.signup', {
         url: '/signup',
         views: {
@@ -62,15 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     })
 
-    .state('app.zoom', {
-        url: '/zoom',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/zoom.html',
-                //controller: 'ZoomCtrl'
-            }
-        }
-    })
+
     .state('app.search', {
         url: '/search',
         views: {
@@ -81,23 +74,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
     })
 
-    .state('app.browse', {
-        url: '/browse',
-        views: {
-            'menuContent': {
-                templateUrl: 'templates/browse.html'
-            }
-        }
-    })
-      .state('app.playlists', {
-          url: '/playlists',
-          views: {
-              'menuContent': {
-                  templateUrl: 'templates/playlists.html',
-                  controller: 'PlaylistsCtrl'
-              }
-          }
-      })        
+    
+
+      
 
     .state('app.single', {
         url: '/playlists/:playlistId',

@@ -19,11 +19,20 @@
     display: block;
 }
 
+.image-list-thumb-detail {
+    padding-top: 20px;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .image-list-zoom {
     padding: 20px 20px 20px 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+
 }
 
 
