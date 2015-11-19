@@ -103,9 +103,16 @@ angular.module('starter.controllers', [])
         promocode = $scope.promoBest[index].promocode;
         imageUrl = $scope.promoBest[index].image;
         barcode = $scope.promoBest[index].barcode;
-        $scope.showModal('templates/promo-popover.html');
+        $scope.showModal('templates/promo-bestpromodetail.html');
     }
 
+    $scope.promoBestDetailShowData = function (index)
+    {
+        //$scope.activeSlide = index;
+        promocode = $scope.promoCategoryDetail[index].promocode;
+        imageUrl = $scope.promoCategoryDetail[index].image;
+        $scope.showModal('templates/promo-categorydetaildetail.html');
+    }
 
     //$scope.onTapBest = function (index)
     //{
@@ -126,8 +133,14 @@ angular.module('starter.controllers', [])
     $scope.promoCategoryDetailShowData = function (index) {
         //$scope.activeSlide = index;
         promocode = $scope.promoCategoryDetail[index].promocode;
-        imageUrl = $scope.promoCategoryDetail[index].image;
+        imageUrl = $scope.promoCategoryDetail[index+1].image;
         $scope.showModal('templates/promo-categorydetaildetail.html');
+    }
+
+    $scope.promoZoom = function ()
+    {
+        //$scope.activeSlide = index;
+        $scope.showModal('templates/promo-zoom.html');
     }
 
     $scope.showModal = function (templateUrl) {

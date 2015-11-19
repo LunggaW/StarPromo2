@@ -13,7 +13,10 @@
                 <img ng-src="{{promoCategoryDetail[$index].image}}" width="100%" />
             </div>
             <div class="col col-100">
-                <img ng-src="{{promoCategoryDetail[$index +1].image}}" width="100%" />
+                <ion-scroll zooming="true" direction="xy" style="width: 100%; height: 100%">
+                    <img ng-src="{{promoCategoryDetail[$index +1].image}}" width="100%" />
+                </ion-scroll>
+
             </div>
         </div>
     </ion-content>
