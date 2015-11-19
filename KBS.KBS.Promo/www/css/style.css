@@ -1,1 +1,5 @@
 /* Empty. Add your own CSS if you like */
+@import url('style.css');
+.bar.bar-light {
+  background-color: rgba(255,255,255,.66) !important; /* or transparent, or background:none */
+}

@@ -7,18 +7,22 @@
 </head>
 <body ng-controller="SlideBoxCtrl">
     <div>
-        <ion-content>
-            <ion-slide-box on-slide-changed="slideHasChanged()" show-pager="true" does-continue="true" auto-play="true">
-                <ion-slide ng-repeat="i in promoBest" ng-click="showDataBest($index)">
-                    <img ng-src="{{i.image}}" class="image-list-thumb" />
-                </ion-slide>
-            </ion-slide-box>
-            <ion-slide-box on-slide-changed="slideHasChanged()" show-pager="true" does-continue="true">
-                <ion-slide ng-repeat="i in promoCategory" ng-click="showDataCategory($index)">
-                    <img ng-src="{{i.image}}" class="image-list-thumb" />
-                </ion-slide>
-            </ion-slide-box>
-        </ion-content>
-        
+        <ion-nav-bar hide-nav-bar="false"></ion-nav-bar>
+        <ion-nav-view hide-nav-bar="false">
+            <ion-view view-title="Hayi Akbar Testing kang "; >
+                <ion-content>
+                    <ion-slide-box on-slide-changed="slideHasChanged()" show-pager="true" does-continue="true" auto-play="true">
+                        <ion-slide ng-repeat="i in promoBest" ng-click="showDataBest($index)">
+                            <img ng-src="{{i.image}}" class="image-list-thumb" />
+                        </ion-slide>
+                    </ion-slide-box>
+                    <ion-slide-box on-slide-changed="slideHasChanged()" show-pager="true" does-continue="true">
+                        <ion-slide ng-repeat="i in promoCategory" ng-click="showDataCategory($index)">
+                            <img ng-src="{{i.image}}" class="image-list-thumb" />
+                        </ion-slide>
+                    </ion-slide-box>
+                </ion-content>
+            </ion-view>
+        </ion-nav-view>
     </div>
 </body>
