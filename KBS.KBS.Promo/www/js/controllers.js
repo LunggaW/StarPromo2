@@ -133,7 +133,7 @@ angular.module('starter.controllers', [])
     $scope.promoCategoryDetailShowData = function (index) {
         //$scope.activeSlide = index;
         promocode = $scope.promoCategoryDetail[index].promocode;
-        imageUrl = $scope.promoCategoryDetail[index+1].image;
+        imageUrl = $scope.promoCategoryDetail[index].image;
         $scope.showModal('templates/promo-categorydetaildetail.html');
     }
 
