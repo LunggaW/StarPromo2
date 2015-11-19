@@ -1,3 +1,4 @@
+/// <reference path="../templates/SlideBox.html" />
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
@@ -50,14 +51,13 @@ angular.module('starter.controllers', [])
 })
 .controller('SearchCtrl', function ($scope, $stateParams) {
 })
-.controller('SignInCtrl', function ($scope, $log, $window) {
+.controller('SignInCtrl', function ($scope, $window) {
            
     
 
     $scope.submit = function (username) {        
         alert("Log In " + username);
-        var url = "#/app/informasi";
-        $log.log(url);
+        var url = "#/app/slidebox";        
         $window.location.href = url;
         //$location.fromTemplateUrl('/app/informasi', '_self');
         //$location.reload();
@@ -82,7 +82,9 @@ angular.module('starter.controllers', [])
   ];
 })
 
-.controller('SlideBoxCtrl', function ($scope, $ionicSlideBoxDelegate, $ionicModal) {
+.controller('SlideBoxCtrl', function ($scope, $ionicSlideBoxDelegate,$ionicNavBarDelegate, $ionicModal) {
+    $ionicNavBarDelegate.showBar(true);
+    $ionicNavBarDelegate.title("Main Menu");
     var promocode;
     var imageUrl;
     var barcode;
