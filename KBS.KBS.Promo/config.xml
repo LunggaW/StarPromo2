@@ -17,4 +17,5 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true" />
   </feature>
+  <vs:plugin name="cordova-plugin-splashscreen" version="2.1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" />
 </widget>
