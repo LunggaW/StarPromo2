@@ -9,6 +9,10 @@
                     <label class="item item-input">
                         <span class="input-label">{{promo.promocode}}</span>
                     </label>
+                    <label class="item item-input">
+                        <span class="input-label">{{promo.description}}</span>
+                    </label>
+                    <img ng-src="{{promo.barcode}}" class="image-list-thumb" />
                     <img ng-src="{{promo.imageUrl}}" class="image-list-thumb" ng-click="promoZoom()" />
                 </ion-item>
             </div>
