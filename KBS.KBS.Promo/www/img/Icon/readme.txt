@@ -1,0 +1,1 @@
+Copy all to platforms\android\res
